@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutri+</title>
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body>
+  <div class="navbar">
+    <h1>Nutri+</h1>
+    <div class="aContainer">
+      <a href="#">Home</a>
+      <a href="#planosContainer">Planos</a>
+      <a href="nutricionistas.html">Nutricionistas</a>
+    </div>
+    <div class="btncontainer">
+      <input type="button" value="Login" onclick="abrir(document.getElementById('modalEntra'))">
+    </div>
+  </div>
+
+  <h2 class="textoMain txt1">
+    O <strong>Nutri+</strong> é uma plataforma inovadora que conecta pacientes e nutricionistas em todo o Brasil. Nosso objetivo é fornecer um acompanhamento nutricional de qualidade e personalizado, facilitando o acesso a informações de saúde e promovendo a adoção de hábitos alimentares saudáveis.
+  </h2>
+
+  <div class="boxesContainer">
+    <div class="infoBox">
+      <h2>Consultas</h2>
+      <h3>Agende uma consulta com nutricionistas especializados para um acompanhamento personalizado.</h3>
+      <p>Saiba mais &rarr;</p>
+    </div>
+    <div class="infoBox">
+      <h2>Planos</h2>
+      <h3>Descubra nossos planos de nutrição, desenvolvidos para atender diferentes metas e estilos de vida.</h3>
+      <p>Saiba mais &rarr;</p>
+    </div>
+    <div class="infoBox">
+      <h2>Nutricionistas</h2>
+      <h3>Conheça nutricionistas qualificados, cada um com especialidades para melhor atender às suas necessidades.</h3>
+      <p>Saiba mais &rarr;</p>
+    </div>
+  </div>
+
+  <div class="planosContainer" id="planosContainer">
+    <h2>Planos Atuais</h2>
+    <p>Escolha o plano de nutrição que melhor atende às suas necessidades. Cada plano é projetado para proporcionar orientações nutricionais de qualidade, adaptadas ao seu estilo de vida.</p>
+    
+    <div class="planBox">
+      <h3>Plano Essencial</h3>
+      <p>R$--</p>
+      <p>----------------------------</p>
+      <p>Perfeito para quem busca uma introdução à nutrição saudável, com acompanhamento básico e metas simples para o dia a dia.</p>
+    </div>
+    
+    <div class="planBox">
+      <h3>Plano Avançado</h3>
+       <p>R$--</p>
+      <p>----------------------------</p>
+      <p>Ideal para quem deseja um acompanhamento mais completo, com ajustes personalizados, metas específicas e suporte contínuo.</p>
+    </div>
+    
+    <div class="planBox">
+      <h3>Plano Premium</h3>
+       <p>R$--</p>
+      <p>----------------------------</p>
+      <p>Para quem quer o máximo de exclusividade e resultados, com consultas frequentes, planos totalmente personalizados e suporte especializado.</p>
+    </div>
+  </div>
+
+
+
+    
+    
+    
+    
+    
+
+    <div class="navbar finalPag">
+      <p>Contanto
+        (61) 3354-0000  
+        Brasília- Brasil</p>
+    </div>
+
+    <div class="modalEntra desativado" id="modalEntra">
+      <div class="titleContainer">
+        <div></div>
+        <h1>Entrar</h1>
+        <h2 onclick="fechar(document.getElementById('modalEntra'))">&#x2716;</h2>
+      </div>
+
+      <div class="inputContainer">
+        <input type="text" placeholder="Email" id="emailLogin">
+        <input type="password" placeholder="Senha" id="senhaLogin">
+        <input type="button" value="Entrar" onclick="login()">
+      </div>
+      <p>Não possui Conta clique <a href="#" onclick="abrir(document.getElementById('modalRegistro'))">aqui</a>.</p>
+    </div>
+
+    <div class="modalRegistro desativado" id="modalRegistro">
+      <div class="titleContainer">
+        <div></div>
+        <h1>Register</h1>
+        <h2 onclick="fechar(document.getElementById('modalRegistro'))">&#x2716;</h2>
+     </div>
+        <div class="checkContainer">
+          <h2>Paciente</h2>
+          <label class="switch">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+          <h2>Nutricionista</h2>
+        </div>
+        
+      <div class="crnContainer">
+        <p></p>
+        <input type="text" placeholder="CRN" id="crn">
+      </div>
+
+      
+
+      
+
+        <div class="inputContainer">
+
+          <input type="text" placeholder="Nome">
+          <input type="text" placeholder="email">
+          <input type="password" placeholder="SenhaR">
+          <input type="button" value="Registrar" onclick="registrar()">
+        </div>
+
+      
+    </div>
+
+
+
+    <script src="script.js"></script>
+  </body>
+</html>
